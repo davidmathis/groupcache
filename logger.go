@@ -80,7 +80,6 @@ func (l LogrusLogger) ErrorField(label string, err error) Logger {
 		Entry: l.Entry.WithField(label, err),
 		level: l.level,
 	}
-
 }
 
 // StringField - create a field for a string.
